@@ -4,10 +4,15 @@ An innovative touchless game experience where the user can train the computer (M
 
 ## Credits
 Objection detection
-- Google AI experiment, Teachable Machine - [Link to repository](https://github.com/googlecreativelab/teachable-machine.git)
-
+* Google AI experiment, Teachable Machine - [Link to repository](https://github.com/googlecreativelab/teachable-machine.git)
 Game
-- raywenerlich's Rocket Mouse tutorial - [Link to tutorial](https://www.raywenderlich.com/5458-how-to-make-a-game-like-jetpack-joyride-in-unity-2d-part-1)
+* raywenerlich's Rocket Mouse tutorial - [Link to tutorial](https://www.raywenderlich.com/5458-how-to-make-a-game-like-jetpack-joyride-in-unity-2d-part-1)
+
+![](images/p1.PNG)
+
+![](images/p2.PNG)
+
+![](images/p3.PNG)
 
 ## How to play
 * Clone this Touchless Game repo and the repo for the [Backend server](https://github.com/aigamesyoozoo/TouchlessGameBackend.git)
