@@ -1,6 +1,6 @@
 # Touchless Rocket Mouse
 ## About
-An innovative touchless game experience where user can train the computer (Machine Learning) to recognize gestures, pose, facial expressions, that correspond to game controls. This is an integration of objection detection api using Google AI experiment, Teachable Machine, and Rocket Mouse game in WebGL format. A separate [RESTful API Node.js backend server](https://github.com/aigamesyoozoo/TouchlessGameBackend.git) is used to facilitate data transfer between the AI model and game. 
+An innovative touchless game experience where the user can train the computer (Machine Learning) to recognize gestures, poses and facial expressions, that correspond to game controls (in this case, "fly"). This is an integration of the objection detection api using Google AI experiment, Teachable Machine, and a Rocket Mouse game in WebGL format. A separate [Backend server](https://github.com/aigamesyoozoo/TouchlessGameBackend.git) runs concurrently to facilitate data transfer between the AI model and game. 
 
 ## Credits
 Objection detection
@@ -10,16 +10,16 @@ Game
 - raywenerlich's Rocket Mouse tutorial - [Link to tutorial](https://www.raywenderlich.com/5458-how-to-make-a-game-like-jetpack-joyride-in-unity-2d-part-1)
 
 ## How to play
-- Clone this Touchless Game repo and the repo for the [Backend server](https://github.com/aigamesyoozoo/TouchlessGameBackend.git)
-- Each repo concurrently runs on separate localhost ports
--- Touchless Game: port 3000
--- Backend server: port 4000
-- Train two gestures/images
--- first for idle mouse
--- second for flying mouse
-- Scroll down to the game
--- Click on Settings > change the IP address to your IP address (In command prompt type: ipconfig)
--- Click on Start Game
+* Clone this Touchless Game repo and the repo for the [Backend server](https://github.com/aigamesyoozoo/TouchlessGameBackend.git)
+* Each repo concurrently runs on separate localhost ports
+  * Touchless Game: port 3000
+  * Backend server: port 4000
+* Train two gestures/images
+  * first for idle mouse
+  * second for flying mouse
+* Scroll down to the game
+  * Click on Settings > change the IP address to your IP address (In command prompt type: ipconfig)
+  * Click on Start Game
 
 ## How to run this project?
 #### Install dependencies by running (similar to `npm install`)
@@ -36,4 +36,4 @@ yarn build
 ```
 yarn run watch
 ```
-- Important! Change the url from IP address to localhost as there are security restrictions on webcam use when using IP as server in url.
+* Important! Change the url from IP address to localhost as there are security restrictions on webcam use when using IP as server in url.
