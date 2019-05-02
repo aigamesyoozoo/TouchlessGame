@@ -1,6 +1,6 @@
 # Touchless Rocket Mouse
 ## About
-An innovative touchless game experience where user can train the computer (Machine Learning) to recognize gestures, pose, facial expressions, that correspond to game controls. This is an integration of objection detection api using Google AI experiment, Teachable Machine, and Rocket Mouse game in WebGL format. A separate Node.js server is used to send data.
+An innovative touchless game experience where user can train the computer (Machine Learning) to recognize gestures, pose, facial expressions, that correspond to game controls. This is an integration of objection detection api using Google AI experiment, Teachable Machine, and Rocket Mouse game in WebGL format. A separate [RESTful API Node.js backend server](https://github.com/aigamesyoozoo/TouchlessGameBackend.git) is used to facilitate data transfer between the AI model and game. 
 
 ## Credits
 Objection detection
@@ -9,7 +9,19 @@ Objection detection
 Game
 - raywenerlich's Rocket Mouse tutorial - [Link to tutorial](https://www.raywenderlich.com/5458-how-to-make-a-game-like-jetpack-joyride-in-unity-2d-part-1)
 
-## Development
+## How to play
+- Clone this Touchless Game repo and the repo for the [Backend server](https://github.com/aigamesyoozoo/TouchlessGameBackend.git)
+- Each repo concurrently runs on separate localhost ports
+-- Touchless Game: port 3000
+-- Backend server: port 4000
+- Train two gestures/images
+-- first for idle mouse
+-- second for flying mouse
+- Scroll down to the game
+-- Click on Settings > change the IP address to your IP address (In command prompt type: ipconfig)
+-- Click on Start Game
+
+## How to run this project?
 #### Install dependencies by running (similar to `npm install`)
 ```
 yarn
@@ -24,3 +36,4 @@ yarn build
 ```
 yarn run watch
 ```
+- Important! Change the url from IP address to localhost as there are security restrictions on webcam use when using IP as server in url.
